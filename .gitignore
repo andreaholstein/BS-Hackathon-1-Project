@@ -1,2 +1,2 @@
 # ADD Files & Folders to be ignored here
-
+*.css.map
