@@ -190,14 +190,13 @@ body {
   margin: 0;
   padding: 1rem 0;
 }
-
-.results-container {
+.results__container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
-
 .results__img {
   box-sizing: border-box;
   width: 20rem;
-  padding: 1rem;
+  padding: 0;
 }/*# sourceMappingURL=styles.css.map */
