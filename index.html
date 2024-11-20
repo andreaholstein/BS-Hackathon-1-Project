@@ -12,8 +12,113 @@
     <script scr="https://unpkg.com/axios/dist/axios.min.js" defer></script>
   </head>
   <body>
-    <main>
-      <header></header>
+    <header class="header">
+      <h1 class="header__title">Choose Your Adventure!</h1>
+      <p class="header__welcome-blurb">
+        <span class="header__span">We are your Travel Agents!</span> And we're
+        here to assist you in picking your next great Canadian adventure! To
+        start, please answer a few questions below and out esteemed Travel
+        Agents--using their sophisticated travel matching data-algorithms--will
+        match you with your
+        <span class="header__span">dream vacation destination!</span>
+      </p>
+    </header>
+    <main class="main">
+      <form action="#" class="form quiz">
+        <section class="form__wrap quiz__wrap">
+          <!-- ---------------------- Q1 -------------------------- -->
+          <label for="question1" class="quiz__question quiz__question-1">
+            <h3 class="quiz__question-title">What is calling to you?</h3>
+            <div class="quiz__inner-question-wrap">
+              <input
+                type="image"
+                class="quiz__input-image"
+                src="./assets/dummy_image.jpg"
+                alt="dummy"
+                name="water"
+                id="water-img"
+              />
+              <input
+                type="image"
+                class="quiz__input-image"
+                src="./assets/dummy_image.jpg"
+                alt="dummy"
+                name="mountain"
+                id="mountain-image"
+              />
+              <input
+                type="image"
+                class="quiz__input-image"
+                src="./assets/dummy_image.jpg"
+                alt="dummy"
+                name="city"
+                id="city-image"
+              />
+            </div>
+          </label>
+          <!-- ---------------------- Q2 --------------------------- -->
+          <!-- ----- WILL NEED TO DYNAMICALLY RENDER BASED ON Q1 RESPONSE --- -->
+          <!-- ---------------- Q2 - WATER OPTION ------------------- -->
+          <label
+            for="question2-water"
+            class="quiz__question quiz__question-2 quiz__question-2--water"
+          >
+            <h3 class="quiz__question-title">
+              Greeeat Choice! In that case, how do you feel about going to ... ?
+            </h3>
+
+            <div class="quiz__inner-question-wrap">
+              <input
+                type="image"
+                class="quiz__input-image"
+                src="./assets/dummy_image.jpg"
+                alt="dummy"
+                class="question2-water"
+                id="beach-img"
+              />
+              <input
+                type="image"
+                class="quiz__input-image"
+                src="./assets/dummy_image.jpg"
+                alt="dummy"
+                name="question2-water"
+                id="boating-image"
+              />
+            </div>
+          </label>
+
+          <!-- ---------------- Q2 - MOUNTAIN OPTION ------------------- -->
+          <!-- <label
+            for="question2-mountain"
+            class="quiz__question quiz__question-2 quiz__question-2--mountain"
+          >
+          <h3 class="quiz__question-title">Greeeat Choice! In that case, how do you feel about going to ... ?</h3>
+            <div class="quiz__inner-question-wrap">
+              <input type="image" class="quiz__input-image"  src="./assets/dummy_image.jpg"
+                alt="dummy" name="question2-mountain" id="skiing-img" />
+              <input type="image" class="quiz__input-image"  src="./assets/dummy_image.jpg"
+                alt="dummy" name="question2-mountain" id="camping-image" />
+            </div>
+          </label> -->
+
+          <!-- ---------------- Q2 - CITY OPTION ------------------- -->
+          <!-- <label
+            for="question2-city"
+            class="quiz__question quiz__question-2 quiz__question-2--city"
+          >
+          <h3 class="quiz__question-title">Greeeat Choice! In that case, how do you feel about going to ... ?</h3>
+            <div class="quiz__inner-question-wrap">
+              <input type="image" class="quiz__input-image"  src="./assets/dummy_image.jpg"
+                alt="dummy" name="question2-city" id="restaurant-img" />
+              <input type="image" class="quiz__input-image"  src="./assets/dummy_image.jpg"
+                alt="dummy" name="question2-city" id="nightlife-image" />
+            </div>
+          </label> -->
+        </section>
+      </form>
+      <section class="results">
+        <h2 class="results__title">Results:</h2>
+      </section>
     </main>
     <footer></footer>
   </body>
