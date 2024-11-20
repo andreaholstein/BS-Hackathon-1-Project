@@ -6,14 +6,32 @@
     <title>Hackathon 1</title>
     <!-- ----------------------- CSS ---------------------------- -->
     <link rel="stylesheet" href="./styles/styles.css" />
-    <!-- ----------------------- JAVASCRIPT ---------------------------- -->
-    <script src="./scripts/script.js" defer></script>
     <!-- ----------------------- API ---------------------------- -->
-    <script scr="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- ----------------------- JAVASCRIPT ---------------------------- -->
+    <script src="./scripts/travel-api.js"></script>
+    <script src="./scripts/script.js" defer></script>
   </head>
   <body>
     <main>
       <header></header>
+      <h1>results:</h1>
+      <div class="results__container"></div>
+      <img
+        id="water-img"
+        src="https://picsum.photos/id/237/200/300"
+        alt="picture"
+      />
+      <img
+        id="mountain-img"
+        src="https://picsum.photos/seed/picsum/200/300"
+        alt="picture"
+      />
+      <img
+        id="city-img"
+        src="https://picsum.photos/200/300?grayscale"
+        alt="picture"
+      />
     </main>
     <footer></footer>
   </body>
